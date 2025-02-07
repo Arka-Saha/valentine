@@ -4,20 +4,37 @@ html,body
     padding: 0;
     margin: 0;
     overflow: hidden;
+    background-color: rgb(133, 206, 255);
+}
+
+#head
+{
+    margin-top: 140px;
+    font-size: 70px;
+    /* align-self: baseline; */
+    /* align-content: center; */
+    /* align-content: end; */
+    /* align-items: center; */
+    text-align: center;
+    max-height: 70px;
+    font-family: "Inter Tight", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(80, 97, 167);
 }
 
 .rose-container
 {
-    margin-top: 20vh;
+    position: absolute;
     width: 100vw;
-    background-color: black;
+    background-color: rgb(133, 206, 255);
     height: 100vh;
 }
 
 .rose-main
 {
-    background-color: rgb(20, 125, 125);
-    width: 900px;
+    background-color: rgb(133, 206, 255);
+    width: 300px;
     height: 70vh;
     /* display: ; */
     display: flex;
@@ -164,7 +181,7 @@ html,body
         z-index: 0;
     }
     100%{
-    margin-top: 400px;
+    margin-top: 450px;
     opacity: 100;
     z-index: 0;
     }
@@ -214,5 +231,9 @@ html,body
     .rose-main
     {
         width: 200px;
+    }
+    html,body{overflow: hidden;}
+    #head{font-size: 40px;
+        max-height: 40px;
     }
 }
