@@ -101,10 +101,7 @@ html, body
         font-size: 40px;
     }
 
-    .ring-txt
-    {
-    margin-top: -290px;
-
-    }
+    html, body{
+        overflow:auto;}
 
 }
