@@ -5,7 +5,7 @@ let pic = document.querySelector("img");
 
 const head_arr = ["myy", "little", "pookkie bear na", "happiieiest", "teddyy", "dayy na", "myy booboo hehe", "m-me", "mee be your teddy okie🤭❤️"];
 const txt_arr = ["tiiss m-me hehe", "and", "tis yaa shhh","andndd", "tiss w-we ususu❤️", "tis alsos hehe 👉👈🥺", "a-and tiss too 🫣", "andndd", "ya take orkho teddy okie"];
-const pics = ["bububear.png","bububear.png","dudu.png", "dudu.png", "hug1.png", "hug3.gif", "hug2.gif", "hug2.gif", "orkho.png"];
+const pics = ["bububear.png","bububear.png","dudu.png", "dudu.png", "hug1.png", "hug3.gif", "hug2.gif", "hug2.gif", "foto.jpeg"];
 
 let i =0;
 let intv1 = setInterval(() => {
