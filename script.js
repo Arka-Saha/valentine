@@ -1,42 +1,35 @@
-let head = document.getElementById("txt1");
-let txt = document.getElementById("txt2");
-let btn = document.getElementById("btn");
-let pic = document.getElementById("photo");
+let head = document.querySelector(".head");
+let txt = document.querySelector(".txt");
+let pic = document.querySelector("img");
 
-btn.style.visibility = "hidden";
 
-let head_arr = ["bubududu na", "supahhh", "happiiestt", "chociieie", "dayyy", "na", "mah babeyy ❤️🥺", "cheheh 👉👈🤭", "🥺✨🍫"];
-let pics = ["bounty.png", "feast.webp", "fero.png", "gems.png", "hershey.png", "kinder.webp", "loli.png", "orkho.jpeg"]
-let txt_arr= ["MUEHEHEH ouurur favouriteyy chocie shhh","yaa makey me feel richie like MR BEAST shh", "Yaa more BEAUTIFULLL and PRECIOUSS than tis", "Ya mah little GEMMM na hehehee", "c-can me hab oneu (maney) KIMSIE hehe", "ya alwaysys gib orkho hearty JOYJOY", "L-loli meow we shareyy", "well ya can hab ORKHOO too 👉👈🫣"];
-let btn_arr=["w-we hab okie", "meow Mr Orkho", "hehehe", "pondaa gemy", "okie only oneu 😒", "🥺👉👈✨", "l-loli mine 😾", "orkhoo 👀(mine too)"];
+const head_arr = ["myy", "little", "pookkie bear na", "happiieiest", "teddyy", "dayy na", "myy booboo hehe", "m-me", "mee be your teddy okie🤭❤️"];
+const txt_arr = ["tiiss m-me hehe", "and", "tis yaa shhh","andndd", "tiss w-we ususu❤️", "tis alsos hehe 👉👈🥺", "a-and tiss too 🫣", "andndd", "ya take orkho teddy okie"];
+const pics = ["bububear.png","bububear.png","dudu.png", "dudu.png", "hug1.png", "hug3.gif", "hug2.gif", "hug2.gif", "orkho.png"];
 
-let i = 0;
-let intv = setInterval(() => {
+let i =0;
+let intv1 = setInterval(() => {
     if(i<head_arr.length)
-    {
-        head.textContent = head_arr[i];
-        i++;
+        {head.textContent = head_arr[i];i++;}
+    else 
+    {clearInterval(intv1);i=0;
+    let j=0;
+    let intv2 =  setInterval(() => {
+        if (j<txt_arr.length)
+        {
+            txt.textContent = txt_arr[j];
+            pic.src = `${pics[j]}`;
+            j++
+        }
+        else
+        {
+            clearInterval(intv2)
+            setTimeout(() => {
+                window.alert("hehe me lobsu hehe");
+            }, 1500);;
+        }
 
-    }
-    else{
-        i=0;
-    btn.style.visibility = "visible";
-    clearInterval(intv);
-    }
-    
 }, 1000);
+    }
 
-btn.onclick = () =>
-{
-    if(i<btn_arr.length)
-    {
-        pic.src = `img/${pics[i]}`;
-        btn.textContent = btn_arr[i];
-        txt.textContent = txt_arr[i];
-        i++;
-    }
-    else
-    {
-        window.open("img/orkho.jpeg");
-    }
-}
+}, 1000);
